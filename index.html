@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Game</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="gamestart">
+            <div id="starttag">
+                <button id="startbtn">
+                    <img src="play_arrow_48dp_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </button>
+                <h1>Start</h1>
+            </div>
+        </div>
+        <div id="pausetag">
+            <img src="pause-solid.svg" alt="">
+        </div>
+        <div id="board">
+            <div id="panel">
+                <div class="score">
+                    <div class="tag">Hit</div>
+                    <div id="hit" class="box">0</div>
+                </div>
+                <div class="score">
+                    <div class="tag">Timer</div>
+                    <div id="timerVal" class="box">30</div>
+                </div>
+                <div class="score">
+                    <div class="tag">Score</div>
+                    <div id="score" class="box">0</div>
+                </div>
+            </div>
+            <div id="game"></div>
+        </div>
+        <div id="gameover">
+            <div id="overhead">
+                <h1>Game Over</h1>
+            </div>
+            <div id="overmid">
+                <div class="scores">
+                    <div class="tag">Hits</div>
+                    <div id="overHit" class="box">0</div>
+                </div>
+                <div class="scores">
+                    <div class="tag">Score</div>
+                    <div id="overScore" class="box">0</div>
+                </div>
+                <div class="scores">
+                    <div class="tag">High Score</div>
+                    <div id="highscore" class="box">0</div>
+                </div>
+            </div>
+            <div id="overbtm">
+                <button id="playAgain">
+                    <span class="material-symbols-outlined">
+                        play_circle
+                    </span>
+                </button>
+                <h3>Play Again</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
